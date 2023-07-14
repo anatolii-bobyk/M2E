@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/di.xsd">
+    <virtualType name="M2e\M2eModule\Model\ResourceModel\Product\Grid\Collection"
+                 type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">m2e_products</argument>
+            <argument name="resourceModel" xsi:type="string">M2e\M2eModule\Model\ResourceModel\Product</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="m2e_products_grid_data_source" xsi:type="string">
+                    M2e\M2eModule\Model\ResourceModel\Product\Grid\Collection
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <preference for="M2e\M2eModule\Api\Data\ProductInterface" type="M2e\M2eModule\Model\Product"/>
+    <preference for="M2e\M2eModule\Api\ProductRepositoryInterface" type="M2e\M2eModule\Model\ProductRepository"/>
+    <preference for="M2e\M2eModule\Api\Data\UserInterface" type="M2e\M2eModule\Model\User"/>
+    <preference for="M2e\M2eModule\Api\UserRepositoryInterface" type="M2e\M2eModule\Model\UserRepository"/>
+</config>
+
+
+
+
+
+

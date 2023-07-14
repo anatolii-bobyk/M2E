@@ -1,0 +1,29 @@
+{
+    "m2e_products": {
+        "column": {
+            "id": true,
+            "name": true,
+            "sku": true,
+            "price": true,
+            "qty": true,
+            "status": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "M2E_PRODUCTS_SKU": true
+        }
+    },
+    "m2e_form": {
+        "column": {
+            "user_id": true,
+            "name": true,
+            "email": true,
+            "phone": true,
+            "auth_id": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "M2E_FORM_AUTH_ID": true
+        }
+    }
+}

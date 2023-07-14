@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="M2e_M2eModule::m2e_menu" title="M2e Menu" sortOrder="9999">
+                    <resource id="M2e_M2eModule::user" title="User"/>
+                    <resource id="M2e_M2eModule::products" title="Products"/>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

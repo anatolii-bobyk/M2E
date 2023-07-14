@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="M2e_M2eModule::m2e_menu" title="M2E Menu" module="M2e_M2eModule" sortOrder="999"
+             resource="M2e_M2eModule::m2e_menu"/>
+        <add id="M2e_M2eModule::user" title="User" module="M2e_M2eModule" sortOrder="10"
+             parent="M2e_M2eModule::m2e_menu" resource="M2e_M2eModule::user" action="m2e/user/index"/>
+        <add id="M2e_M2eModule::products" title="Products" module="M2e_M2eModule" sortOrder="20"
+             parent="M2e_M2eModule::m2e_menu" resource="M2e_M2eModule::products" action="m2e"/>
+    </menu>
+</config>
